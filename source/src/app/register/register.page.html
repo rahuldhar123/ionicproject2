@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <!--contact icon-->
+      <ion-label position="floating"><ion-icon ios="ios-contact" md="md-contact"></ion-icon>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="fullname" name="fullname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <!--mail icon and input-->
+      <ion-label position="floating">  <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+        Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <!--password lock icon and input-->
+      <ion-label position="floating"><ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+        Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <!--confirm password icon-->
+      <ion-label position="floating"><ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+        Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="cpassword" name="cpassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <!--register-->
+  <div padding>
+    <ion-button block ion-button (click)="register()" round>Register</ion-button>
+    <ion-button block ion-button (click)="login()" round>Login</ion-button>
+  </div>
+</ion-content>

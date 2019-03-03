@@ -1,0 +1,6 @@
+{
+  "appId": "com.ionic.cam",
+  "appName": "ionicpro",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
